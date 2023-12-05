@@ -7,7 +7,7 @@ for ($i = 1; $i < 100; $i ++) { // i recebe 1; i for menor que 100 executo o loo
 
 }
 
-
+//TESTE
 
 
 ?>
