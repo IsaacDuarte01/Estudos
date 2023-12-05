@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<h1>SÓ DE SACANA</h1> 
+<script>
+//TAG DOCUMENT.WRITE - para colocar um HTML no mundo JAVASCRIPT
+    var ano = 2021; //Declaração de variavel no JV => VAR
+    var pulaLinha = "<br><br>"; // fazemos a bvariavel receber a quebra de linha,para nos polpar de colocar varias linhas no meio do cod.
+
+    document.write("Isaac tem: " + (ano - 2001)); //Aqui calculamos a media de tres caboco e concatenamos com a string (O calculo sempre é feito com oque esta entre ())
+    document.write(pulaLinha); 
+    document.write("Felipe tem: " + (ano - 1890 ));
+    document.write(pulaLinha);
+    ano = 2023; //Aqui redefinimos o valor da variavel, não precisamos do var pois ela ja foi definida antes;
+    document.write("Ricardo tem: " + (ano - 1970 ));
+    document.write(pulaLinha);
+   
+
+    var idadeIsaac = 22;
+    var idadeFelipe = 20; //Atribuimos valores a variaveis para facilitar a visibilidade do cod.
+    var idadeJoao = 21;
+
+    var media = (idadeIsaac+idadeFelipe+idadeJoao) /3; //calculamos a media usando as variaveis ja declaradas.
+    document.write("A média das idades é:" + Math.round (media)); //usamos MATH.ROUND (variavel) - Para arredondar o valor
+    document.write(pulaLinha);
+    var nome = "isaac"; // para atribuir valor string a uma variavel,usamos " ". 
+    document.write ("<br> a idade do " + nome + " é " + idadeIsaac );
+
+</script>   

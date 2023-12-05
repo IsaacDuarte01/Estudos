@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+    <h1>SÓ DE SACANA</h1> 
+
+<script>
+
+    function pulaLinha () { 
+
+       document.write ("<br>"); 
+       document.write ("<br>");
+    }
+
+    function mostra (frase) { 
+
+       document.write (frase);
+       pulaLinha(); 
+    }  
+
+    function calculoImc (peso,altura) { //Fazemos uma função para realizar o calculo do IMC
+
+       return peso / (altura * altura); // Perceba que o parametro passado precisa estar de acordo com o parametro declaro na função/ na msm ordem 
+        // return imc; //A variável recebe a função de calcular e, ao final, deve devolver um resultado dentro da própria variável (Return)
+    }   
+
+    var imcIsaac = calculoImc (78, 1.80); //aqui passamos o calculo que vamos utilizar (peso,altura) na msm ordem da função
+    var imcAmigo = calculoImc (82, 1.71);
+    var totalimc = imcIsaac + imcAmigo;
+   
+     document.write("os imc's é: " + totalimc);
+   
+
+   
+   
+</script>

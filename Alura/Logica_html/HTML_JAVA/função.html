@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<h1>SÓ DE SACANA</h1> 
+
+<script>
+
+function pulaLinha () { //Criamos a função pulaLinha para facilitar a manutenção do cod
+
+    document.write ("<br>"); // Passamos dentro do bloco oque essa função vai fazer.
+    document.write ("<br>");
+}
+
+function mostra (frase) { //Nesse exemplo precisamos indicar oque a função vai precisar fazer,nesse caso receber uma frase e exibir ela
+
+    document.write (frase);
+    pulaLinha();  //Aqui chamamos uma função encima de outra,para apenas com o MOSTRA a gente consiga quebrar a linha
+    //(Mas também podemos fazer uma função só para as duas coisas,vc sabe como fazer);
+}
+
+var ano = 2021;
+  
+    mostra ("Hello word");
+    
+
+    mostra("Isaac tem: " + (ano - 2001)); 
+
+   
+    mostra("Felipe tem: " + (ano - 1890 ));
+
+    
+    mostra("só pa chavia");
+   
+   
+
+</script>     
