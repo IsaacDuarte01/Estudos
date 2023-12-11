@@ -22,11 +22,13 @@
         // return imc; //A variável recebe a função de calcular e, ao final, deve devolver um resultado dentro da própria variável (Return)
     }   
 
-    var imcIsaac = calculoImc (78, 1.80); //aqui passamos o calculo que vamos utilizar (peso,altura) na msm ordem da função
-    var imcAmigo = calculoImc (82, 1.71);
-    var totalimc = imcIsaac + imcAmigo;
-   
-     document.write("os imc's é: " + totalimc);
+    var nome = prompt ("Digite seu nome"); //Nesse caso usamos a função PROMPT para guardar um valor digitado pelo usuario 
+    var alturaInformada = prompt (nome + ", Digite sua altura");
+    var pesoInformado = prompt (nome + ", Digite seu peso");
+//
+    var imc = calculoImc (alturaInformada, pesoInformado);
+    
+    document.write (nome + " o seu imc calculado é:" + imc);
    
 
    
