@@ -13,12 +13,34 @@
        document.write (frase);
        pulaLinha(); 
     }  
-/*Sempre que formos ler uma entrada, e a intenção for trabalhar com números, 
-temos que fazer o parseInt() para que o valor digitado, que por padrão é lido 
-como texto, seja interpretado como um número. */
+    /*Sempre que formos ler uma entrada, e a intenção for trabalhar com números, 
+    temos que fazer o parseInt() para que o valor digitado, que por padrão é lido 
+    como texto, seja interpretado como um número. */
     var vitorias = parseInt (prompt ("Entre com o seu numero de vitorias"));
     var empates = parseInt (prompt ("Entre com o seu numero de empates")); //se quiséssemos ler um nome, por exemplo, não seria necessário utilizar a função parseInt()
     
     var pontos = vitorias * 3 + empates;
     mostra ("Os pontos do seu time é: " + pontos);
+
+    if (pontos > 28) // Iniciamos um estrutura de condição bolean para saber como estamos na tabela.
+    {
+        mostra ("seu time está melhor que ano passado");
+    }
+    if (pontos < 28)
+    {
+        mostra ("seu time esta pior que ano passado");
+    }
+    if (pontos == 28)
+    {
+        mostra ("seu time esta igual ao ano passado");
+    }
+
+
+
+
+
+
+
+
+
 </script>
