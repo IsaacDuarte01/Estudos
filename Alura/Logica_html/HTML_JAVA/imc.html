@@ -29,6 +29,20 @@
     var imc = calculoImc (alturaInformada, pesoInformado);
     
     document.write (nome + " o seu imc calculado é:" + imc);
+    
+    if (imc < 18.5)
+    { // 18.5 é o calculo padrão do imc para considerar a baixo do peso
+        mostra (" você ta magrão bicho!"); 
+    }
+    elseif (imc > 18.5 && imc < 24.9 )
+    { // 18.5 ate 24.9 é o calculo padrão do imc para considerar dentro do ideal
+        mostra (" ta padrão amigo!!");
+    }
+    elseif (imc > 24.9 && imc <= 29.9 ) 
+    { // 24.9 ate 29.9 é o calculo padrão do imc para considerar acima do ideal
+        mostra(" Ta um pouco acima colega...");
+    }
+    
    
 
    
