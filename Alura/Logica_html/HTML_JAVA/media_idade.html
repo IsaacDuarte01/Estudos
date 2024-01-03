@@ -1,11 +1,36 @@
 <script>
+   // Função que imprime duas quebras de linha no documento HTML
 function pulaLinha() {
     document.write ("<br>");
     document.write ("<br>");
 }
 
+// Função que recebe uma frase como parâmetro e a imprime no documento HTML, seguida de duas quebras de linha
 function mostra(frase) {
     document.write (frase);
-    pulaLinha ();
+    pulaLinha();
 }
+
+// Variável que armazena a quantidade total de familiares (obtida a partir da interação com o usuário)
+var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+// Variável utilizada para contar o número de familiares inseridos (inicializada em 1)
+var numero = 1;
+// Variável que acumula a soma das idades dos familiares
+var totalIdades = 0;
+
+// Loop que solicita a idade de cada familiar e atualiza a variável totalIdades
+while (numero <= totalFamiliares) {
+    var idade = parseInt(prompt("Informe a idade do familiar:"));
+    totalIdades = totalIdades + idade;
+    numero++;
+}
+
+// Calcula a média das idades
+var mediaDasIdades = totalIdades / totalFamiliares;
+// Chama a função mostra para exibir a média das idades no documento HTML
+mostra("A média dos familiares é: " + mediaDasIdades);
+// Chama a função mostra para exibir "FIM" no documento HTML
+mostra("FIM");
+
+
 </script>
