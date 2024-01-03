@@ -6,18 +6,21 @@
     }
 
     function mostra(frase) {
-        document.write ("frase");
+        document.write (frase);
         pulaLinha ();
     }
-
+    var limite = parseInt(prompt("Entre com a data limite")); //prt.1 = Usamos a escolha do usuario ao nosso favor e pedimos para ele selecionar até quando gostaria de ver... 
     var anoCopa = 1930;
 
-    while (anoCopa <= 2016){
-        alert ("Teve copa em " + anoCopa); //While é usado sob a condição de que: quando 1930 foi menor ou igual a 2016 ele vai para o pop-up ("FIM").
+    mostra ("Teve copa em:")
+
+    //While é usado sob a condição de que: quando 1930 foi menor ou igual a 2016 ele vai para o pop-up ("FIM").
+    while (anoCopa <= limite){ //PART.2 = e aqui definimos a resposta do usuario como literalmente nosso limite.
+        mostra (anoCopa);
         anoCopa = anoCopa + 4;
     }
 
-    alert ("fim");
+    mostra ("FIM!!");
 
 
 
