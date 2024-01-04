@@ -1,0 +1,28 @@
+<script> 
+    function pulaLinha() {
+     
+      document.write ("<br>");
+      document.write ("<br>");
+    }
+
+    function mostra(frase) {
+    
+       document.write (frase);
+       pulaLinha ();
+    }
+    
+
+    for (var linha=1; linha <=3; linha ++) { // primeiro for para controlar a quantidade de linhas
+        
+        for(var coluna = 1; coluna <= 10; coluna++){ //ja o segundo para imprimir as 1o estrelas que definimos
+            document.write("*");
+         }
+         pulaLinha (); // ja o pula linha é para o primeiro for, a cada linha ele executa o PulaLinha() até dar o limite de 3
+    }
+
+
+
+
+
+
+</script>
