@@ -10,5 +10,5 @@
     } else {
         echo "$nome não é da minha familia" . PHP_EOL;
     }
-
+//A função str_contains retorna um booleano verdadeiro caso o segundo parâmetro exista dentro do primeiro.
 ?>
