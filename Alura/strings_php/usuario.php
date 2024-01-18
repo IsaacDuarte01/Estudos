@@ -3,18 +3,24 @@
 cadastrando e, a partir desse e-mail, você quer criar um nome de usuário*/
 
 $email = 'isaac.duarte@gmail.com';
-$senha = '123';
+$senha = 'íííííí';
+
+    /* ATENÇÃO PARA EXTENSÃO:A extensão mb_string do PHP é utilizada para
+    lidar com strings multibyte, ou seja, strings em que cada caractere pode ocupar mais de um byte 
+    nesse caso usamos o MB_(NOME DA FUNÇÃO QUE QUER APLICAr) para esse contagem,como exemplo nosso IF A BAIXO: */
 
 
 //strlen conta bytes e não strings, ex: í com acento ocupa 2bytes
-if (strlen ($senha)< 8) { //Só espera como parametro oque você quer medir
+if (mb_strlen ($senha)< 8) { //Só espera como parametro oque você quer medir
     echo 'Senha insegura' . PHP_EOL;
 }
 
 $posicaoDoArroba = strpos($email,'@'); //STRPOS recebe como parametro aonde você quer buscar, 'oque');
 
-//Usamos a Substring que recebe como parametro a DEonde vai buscar, Posição, Tamanho;
-echo substr ($email, 0, 5) . PHP_EOL;
 
+$usuario = substr ($email, 0, $posicaoDoArroba);
+//Usamos a Substring que recebe como parametro a DEonde vai buscar, Posição, Tamanho; Se não determinarmos o tamanho,vai realizar a leitura ate o fim
+
+//STRTOLOWER para fazer o inverso (minusculo)
+echo strtoupper ($usuario) . PHP_EOL; //STRTOUPPER não transforma nossa string em maiuscula mas sim nos retorna OUTRA string que tenha o conteudo do $usuario em letra maiuscula
 echo substr ($email, $posicaoDoArroba +1) . PHP_EOL;
-// Se não determinarmos o tamanho,vai realizar a leitura ate o fim
