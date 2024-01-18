@@ -5,6 +5,8 @@ cadastrando e, a partir desse e-mail, você quer criar um nome de usuário*/
 $email = 'isaac.duarte@gmail.com';
 $senha = '123';
 
+
+//strlen conta bytes e não strings, ex: í com acento ocupa 2bytes
 if (strlen ($senha)< 8) { //Só espera como parametro oque você quer medir
     echo 'Senha insegura' . PHP_EOL;
 }
