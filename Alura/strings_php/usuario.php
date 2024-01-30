@@ -26,6 +26,6 @@ $usuario = mb_substr ($email, 0, $posicaoDoArroba);
 echo strtoupper ($usuario) . PHP_EOL; //STRTOUPPER não transforma nossa string em maiuscula mas sim nos retorna OUTRA string que tenha o conteudo do $usuario em letra maiuscula
 echo substr ($email, $posicaoDoArroba +1) . PHP_EOL;
 
-list($nome, $sobrenome) = (explode(' ', $nome));// Explode recebe dois parametros, aonde vai acontecer a separação da string no nosso caso é o espaço ' ' e o segundo é oque quer explodir, no nosso caso o $nome
+list($nome, $sobrenome) = (explode(' ', $nome));// Explode recebe dois parametros aonde vai acontecer a separação da string no nosso caso é o espaço ' ' e o segundo é oque quer explodir, no nosso caso o $nome
 echo 'Nome:' . $nome . PHP_EOL; 
 echo 'Sobrenome:' . $sobrenome . PHP_EOL;
