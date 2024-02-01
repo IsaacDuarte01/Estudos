@@ -3,7 +3,7 @@
 cadastrando e, a partir desse e-mail, você quer criar um nome de usuário*/
 
 $nome = 'Isaac Duarte';
-$email = 'isaac.duarte@gmail.com';
+$email = ' isaac.duarte@gmail.com';
 $senha = 'íííííí';
 
     /* ATENÇÃO PARA EXTENSÃO:A extensão mb_string do PHP é utilizada para
@@ -29,3 +29,5 @@ echo substr ($email, $posicaoDoArroba +1) . PHP_EOL;
 list($nome, $sobrenome) = (explode(' ', $nome));// Explode recebe dois parametros aonde vai acontecer a separação da string no nosso caso é o espaço ' ' e o segundo é oque quer explodir, no nosso caso o $nome
 echo 'Nome:' . $nome . PHP_EOL; 
 echo 'Sobrenome:' . $sobrenome . PHP_EOL;
+
+echo trim($email) . PHP_EOL; //TRIM apara os espaços por padrão,mas podemos selecionar oque ela pode apagar
