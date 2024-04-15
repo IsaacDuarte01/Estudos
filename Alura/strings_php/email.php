@@ -9,6 +9,7 @@ ou seja, do início da linha de código até o início do FIM, o delimitador esc
 o PHP vai contar esse número de espaços e dentro da minha string, todo o espaço inicial ele vai remover
 ,a mesma quantidade de espaços. */
 //HEREDOC O NOME DO <<<
+/* Pode se utilizar aspas simples no delimitador como por ex: <<<'FINAL' no caso essa sintaxe serveria apenas para textos não podendo incluir variavel */
     $conteudoEmail = <<<FINAL
     Ola, $nome
 
